@@ -15,5 +15,7 @@ EditorBuildSettings:
     path: Packages/com.microsoft.mixedreality.spectatorview/SpectatorView/Scenes/SpectatorView.HoloLens.Spectator.unity
     guid: a988fc3dd08b60f4980fda8946f8015f
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: a939721463969164894d26a8d73fe034,
+      type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 1d69f47553393384c9e3ef0d8eff1ad1,
       type: 2}
