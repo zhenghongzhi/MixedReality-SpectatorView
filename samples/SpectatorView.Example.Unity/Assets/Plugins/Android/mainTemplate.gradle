@@ -1,28 +1,29 @@
 buildscript {
-    repositories {
-        google()
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
-    }
+   repositories {
+       google()
+       jcenter()
+   }
+   dependencies {
+       // Must be Android Gradle Plugin 3.6.0 or later. For a list of
+       // compatible Gradle versions refer to:
+       // https://developer.android.com/studio/releases/gradle-plugin
+       classpath 'com.android.tools.build:gradle:3.6.0'
+   }
 }
 
 allprojects {
-    repositories {
-        mavenLocal()
-        google()
-        jcenter()
-        flatDir {
-            dirs 'libs'
-        }
-    }
+  repositories {
+     google()
+     jcenter()
+     flatDir {
+       dirs 'libs'
+     }
+  }
 }
 
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
-def azureSpatialAnchorsSdkVersion = '2.1.1'
+def azureSpatialAnchorsSdkVersion = '2.2.1'
 
 /*
 The ARCore aar library contains the native shared libraries.  These are
@@ -48,7 +49,8 @@ android {
     buildToolsVersion '**BUILDTOOLS**'
 
     defaultConfig {
-        applicationId '**APPLICATIONID**'
+consumerProguardFiles 'proguard-unity.txt'**USER_PROGUARD**
+        
 
         minSdkVersion **MINSDKVERSION**
         targetSdkVersion **TARGETSDKVERSION**
@@ -94,9 +96,9 @@ android {
             useProguard **PROGUARD_RELEASE**
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-unity.txt'**USER_PROGUARD****SIGNCONFIG**
         }
-    }**PACKAGING_OPTIONS****SPLITS**
+    }**PACKAGING_OPTIONS**
 **BUILT_APK_LOCATION**
-}**SPLITS_VERSION_CODE****SOURCE_BUILD_SETUP**
+}**SOURCE_BUILD_SETUP**
 
 // Extracts the shared libraries from aars in the natives configuration.
 // This is done so that NDK builds can access these libraries.

@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Packages/com.microsoft.mixedreality.spectatorview/SpectatorView/Scenes/SpectatorView.HoloLens.unity
-    guid: aaaef5009f203534696f812a2010313e
-  - enabled: 0
     path: Packages/com.microsoft.mixedreality.spectatorview/SpectatorView/Scenes/SpectatorView.ARFoundation.Spectator.unity
     guid: 1e6ff34bb8b2cbb468b958b46f1aa620
+  - enabled: 1
+    path: Assets/Scenes/SpectatorView.HoloLens.unity
+    guid: aaaef5009f203534696f812a2010313e
   - enabled: 0
     path: Packages/com.microsoft.mixedreality.spectatorview/SpectatorView.Editor/Scenes/SpectatorViewCompositor.unity
     guid: 4b7532bb75e238f49b6f062cf8a58d9e
@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SpectatorView.TestScene2.unity
     guid: 7ec8d09e480bccf43a45744d91abf116
-  m_configObjects: {}
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 01c974274ab17ad4299e984eda086dc5,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: c7c9359281a2a8945922d2b304bd4de6,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f21fcb2870dc2d24a8894016a2526bca,
+      type: 2}
