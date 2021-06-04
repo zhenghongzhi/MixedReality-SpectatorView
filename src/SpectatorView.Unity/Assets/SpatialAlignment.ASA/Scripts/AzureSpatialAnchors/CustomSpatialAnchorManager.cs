@@ -34,6 +34,7 @@ namespace Microsoft.Azure.SpatialAnchors.Unity
             if (config != null)
             {
                 authenticationMode = config.AuthenticationMode;
+                spatialAnchorsAccountDomain = config.SpatialAnchorsAccountDomain;
                 spatialAnchorsAccountId = config.SpatialAnchorsAccountId;
                 spatialAnchorsAccountKey = config.SpatialAnchorsAccountKey;
                 clientId = config.ClientId;

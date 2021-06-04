@@ -31,7 +31,7 @@ namespace Microsoft.MixedReality.SpatialAlignment
             if (this.parent != null)
             {
                 Debug.Log("SpatialAnchorsCoordinateService: Creating a CustomSpatialAnchorManager.");
-                SpatialAnchorConfig config = CustomSpatialAnchorConfig.Create(spatialAnchorsConfiguration.AccountId, spatialAnchorsConfiguration.AccountKey);
+                SpatialAnchorConfig config = CustomSpatialAnchorConfig.Create(spatialAnchorsConfiguration.AccountDomain, spatialAnchorsConfiguration.AccountId, spatialAnchorsConfiguration.AccountKey);
                 spatialAnchorManager = this.parent.AddCustomSpatialAnchorManager(config);
                 StartSession().FireAndForget();
             }

@@ -10,10 +10,11 @@ namespace Microsoft.Azure.SpatialAnchors.Unity
         /// </summary>
         /// <param name="spatialAnchorsAccountId">account id</param>
         /// <param name="spatialAnchorsAccountKey">account key</param>
-        public static CustomSpatialAnchorConfig Create(string spatialAnchorsAccountId, string spatialAnchorsAccountKey)
+        public static CustomSpatialAnchorConfig Create(string spatialAnchorsAccountDomain, string spatialAnchorsAccountId, string spatialAnchorsAccountKey)
         {
             CustomSpatialAnchorConfig config = CreateInstance<CustomSpatialAnchorConfig>();
             config.authenticationMode = AuthenticationMode.ApiKey;
+            config.spatialAnchorsAccountDomain = spatialAnchorsAccountDomain;
             config.spatialAnchorsAccountId = spatialAnchorsAccountId;
             config.spatialAnchorsAccountKey = spatialAnchorsAccountKey;
             return config;

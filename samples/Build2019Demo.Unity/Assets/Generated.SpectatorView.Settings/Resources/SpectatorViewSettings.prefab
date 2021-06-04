@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   configuration:
-    AccountDomain: 
+    AccountDomain: southeastasia.mixedreality.azure.com
     AccountId: 42a7c2f6-9cf4-419c-87be-c0405ed9bf81
     AccountKey: LMllGZltdNbraJgTeS9AUP742RCDoyRfTMtuYjSNvHg=
     AccessToken: 
