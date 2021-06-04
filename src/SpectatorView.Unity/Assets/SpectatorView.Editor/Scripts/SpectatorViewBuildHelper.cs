@@ -69,9 +69,9 @@ namespace Microsoft.MixedReality.SpectatorView.Editor
                 PlayerSettings.Android.forceSDCardPermission = true;
                 PlayerSettings.Android.ARCoreEnabled = false;
 
-                EnsureAndroidPluginsDirectory();
-                SetupAndroidManifestFiles();
-                SetupAndroidGradleFiles();
+                //EnsureAndroidPluginsDirectory();
+                //SetupAndroidManifestFiles();
+                //SetupAndroidGradleFiles();
                 AssetDatabase.Refresh();
             }
             else if (EditorUserBuildSettings.activeBuildTarget == BuildTarget.iOS)
