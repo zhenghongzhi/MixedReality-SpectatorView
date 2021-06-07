@@ -43,9 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e476078f139b76b4bb5abc31ec92b582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkForComponentBroadcasters: 2
-  shaderKeywords: 2
-  renderQueue: 2
-  materialProperties: 2
+  checkForComponentBroadcasters: 1
+  shaderKeywords: 1
+  renderQueue: 1
+  materialProperties: 1
   materialPropertyOverrides: []
   materialPropertyBlocks: 1
